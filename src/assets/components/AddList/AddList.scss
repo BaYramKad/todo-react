@@ -1,0 +1,47 @@
+.add-list {
+   
+    .list {
+        margin-bottom: 0;
+    }
+
+    &__popup {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 235px;
+        height: 150px;
+        background: #FFFFFF;
+        box-shadow: 5px 8px 20px 10px RGB(0 0 0 / 5%);
+        border-radius: 10px;
+        position: relative;
+        .button {
+            width: calc(100% - 35px);
+            transition: all 0.15s ease-in-out;
+        }
+        &-color {
+            display: flex;
+            justify-content: space-around;
+            width: calc(100% - 27px);
+            .badge {
+                display: inline-block;
+                position: static;
+                margin-right: 0;
+                width: 16px;
+                height: 16px;
+                border: 3px solid transparent;
+                cursor: pointer;
+                &.active {
+                    border: 3px solid darken(#000, 50%)
+                }
+            }
+        }
+
+        &-close {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            cursor: pointer;
+        }
+    }
+}

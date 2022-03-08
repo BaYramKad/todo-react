@@ -1,0 +1,36 @@
+.task__items-add {
+   
+}
+
+.task-add {
+    padding: 10px 15px 15px 0;
+    opacity: .5;
+    cursor: pointer;
+    transition: opacity 0.15s ease-in-out;
+    &:hover {
+        opacity: 1;
+    }
+    img {
+        margin-right: 16px;
+        margin-left: 6px;
+    }
+   
+    &-value {
+        .buttons {
+            margin-top: 10px;
+            .button {
+                padding: 0 20px 0 20px;
+                margin-right: 10px;
+            }
+            .button ~ button {
+                padding: 0 20px 0 20px;
+                background: #F4F6F8;
+                color: #9C9C9C;
+            }
+        }
+        input {
+            width: 100%;
+        }
+    }
+    
+}

@@ -1,0 +1,59 @@
+
+    .list {
+      $removeIcon: &;
+      user-select: none;
+      margin-bottom: 20px;
+     
+     
+
+      &__add-button {
+        color: #767676;
+        opacity: .6;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+        li {
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          padding: 10px 13px;
+          transition: background-color 0.15s ease-in-out;
+          &:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+            #{$removeIcon}__remove-icon {
+              opacity: .2;
+            }
+          }
+          #{$removeIcon}__remove-icon {
+            padding: 4px;
+            opacity: 0;
+            transition: opacity 0.15s ease-in-out;
+
+            &:hover {
+              opacity: 1;
+            }
+          }
+          span {
+            flex: 1;
+            white-space: nowrap; /* Запрещаем перенос строк */
+            overflow: hidden; /* Обрезаем все, что не помещается в область */
+            text-overflow: ellipsis; /* Добавляем многоточие */
+            i {
+              opacity: .4;
+            }
+          }
+          img {
+            margin-right: 9px;
+          }
+          &.active {
+            background: #FFFFFF;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.04);
+            border-radius: 4px;
+          }
+          margin-bottom: 5px;
+        }
+      
+       
+      }
