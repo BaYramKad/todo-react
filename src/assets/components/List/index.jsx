@@ -7,7 +7,10 @@ import Badge from "../Badge"
 
 import remove from '../icons/remove-list.svg'
 
-const List = ({ items, onClick, isVisible, removeList, onShowList, activeList }) => {
+const List = ({ items, onClick, isVisible, removeList, onShowList, activeList, active }) => {
+    console.log('items: ', items);
+    console.log('activeList: ', activeList);
+    // console.log('activeList: ', activeList);
     // const [loading, setLoading] = useState(false)
  
     const removeItem = (item) => {
@@ -19,7 +22,7 @@ const List = ({ items, onClick, isVisible, removeList, onShowList, activeList })
             <ul onClick={onClick} className={`list`}>
                 {
                     items.map(item => {
-                        return (<li key={item.id} onClick={ onShowList ?  () => onShowList(item) : null } className={classNames(item.className, { "active": activeList && activeList.id === item.id} )}>
+                        return (<li key={item.id} onClick={ onShowList ?  () => onShowList(item) : null } className={classNames(item.className, { "active": item.active ? true :  activeList && activeList.id === item.id} )}>
                                 {
                                     item.icon 
                                     ? <img src={item.img} alt="list icon"/> 

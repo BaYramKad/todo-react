@@ -20,11 +20,12 @@ body {
 .todo {
   display: flex;
   font-size: 14px;
-  width: 750px;
-  height: 560px;
+  width: calc(100vw - 500px);
+  height: calc(100vh - 100px);
   box-shadow: 1px 2px 20px  #f3f3f3;
   border-radius: 10px;
   border: 1px solid #F1F1F1;
+
   &__sidebar {
     background-color: #F4F6F8;
     border-radius: 10px;
@@ -35,8 +36,11 @@ body {
   }
 
   &__tasks {
-    
-    flex: 1
+    flex: 1;
+    overflow: auto;
+    &:not(:last-child) {
+      margin-bottom: 0px;
+    }
   }
 }
 

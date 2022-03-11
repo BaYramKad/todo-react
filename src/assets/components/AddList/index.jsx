@@ -28,8 +28,6 @@ const AddButtonList = ({colors, onAdd}) => {
         alert('Заполните: Название списка')
         return
       }
-
-      // console.log('color: ', color);
       const newList =  {
         id: Math.ceil(Math.random() * 1000),
         name: value,
@@ -37,8 +35,8 @@ const AddButtonList = ({colors, onAdd}) => {
       }
       setIsLoading(true)
       await axios.post('http://localhost:3001/lists', newList).then(({data}) => {
-        let color = colors.filter( color => color.id === selectedColor)[0].name
-        const list = {...data, color: {name: color}} 
+        let color = colors.filter( color => color.id === selectedColor)[0]
+        const list = {...data, color, tasks: []} 
         onAdd(list)
         setvivsiblePopup(false)
       }).finally(() => {

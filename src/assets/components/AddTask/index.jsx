@@ -5,7 +5,7 @@ import addSvg from '../icons/add.svg'
 
 import './AddTask.scss'
 
-export default function AddTask({addTask, list}) {
+export default function AddTask({list, addTask }) {
     const [visibleChange, setVisibleChange] = useState(false)
     const [inputValue, setInputValue] = useState('')
     const [loading, setLoading] = useState(false)
