@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/BaYramKad/todo-react/static/css/main.cd0e698b.css",
-    "main.js": "/BaYramKad/todo-react/static/js/main.0b6907a7.js",
-    "static/media/entypo-list.svg": "/BaYramKad/todo-react/static/media/entypo-list.962e9d08339e7cc14b647d7c2b7563f8.svg",
-    "static/media/close.svg": "/BaYramKad/todo-react/static/media/close.ac7b9278cab353907f42c5983ebc5569.svg",
-    "index.html": "/BaYramKad/todo-react/index.html",
-    "static/media/remove-list.svg": "/BaYramKad/todo-react/static/media/remove-list.bc7b314c451c1449693d162968092841.svg",
-    "static/media/edit.svg": "/BaYramKad/todo-react/static/media/edit.02e2bae29dc29fbc6608fe4de1d4ff35.svg",
-    "static/media/add.svg": "/BaYramKad/todo-react/static/media/add.bb82cf258224298ee8e8019bff6b7e1c.svg",
-    "main.cd0e698b.css.map": "/BaYramKad/todo-react/static/css/main.cd0e698b.css.map",
-    "main.0b6907a7.js.map": "/BaYramKad/todo-react/static/js/main.0b6907a7.js.map"
+    "main.css": "/todo-react/static/css/main.cd0e698b.css",
+    "main.js": "/todo-react/static/js/main.da0b5a4e.js",
+    "static/media/entypo-list.svg": "/todo-react/static/media/entypo-list.962e9d08339e7cc14b647d7c2b7563f8.svg",
+    "static/media/close.svg": "/todo-react/static/media/close.ac7b9278cab353907f42c5983ebc5569.svg",
+    "static/media/remove-list.svg": "/todo-react/static/media/remove-list.bc7b314c451c1449693d162968092841.svg",
+    "index.html": "/todo-react/index.html",
+    "static/media/edit.svg": "/todo-react/static/media/edit.02e2bae29dc29fbc6608fe4de1d4ff35.svg",
+    "static/media/add.svg": "/todo-react/static/media/add.bb82cf258224298ee8e8019bff6b7e1c.svg",
+    "main.cd0e698b.css.map": "/todo-react/static/css/main.cd0e698b.css.map",
+    "main.da0b5a4e.js.map": "/todo-react/static/js/main.da0b5a4e.js.map"
   },
   "entrypoints": [
     "static/css/main.cd0e698b.css",
-    "static/js/main.0b6907a7.js"
+    "static/js/main.da0b5a4e.js"
   ]
 }
