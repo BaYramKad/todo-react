@@ -8,13 +8,8 @@ import Badge from "../Badge"
 import remove from '../icons/remove-list.svg'
 
 const List = ({ items, onClick, isVisible, removeList, onShowList, activeList, active }) => {
-    console.log('items: ', items);
-    console.log('activeList: ', activeList);
-    // console.log('activeList: ', activeList);
-    // const [loading, setLoading] = useState(false)
- 
     const removeItem = (item) => {
-        axios.delete('http://localhost:3001/lists/' + item.id).then(() => {
+        axios.delete('http://localhost:3000/lists/' + item.id).then(() => {
             removeList(item.id)
         })
     }

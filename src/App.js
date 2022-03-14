@@ -23,8 +23,8 @@ function App() {
     useEffect(() => {
       const load = async () => {
         setIsLoading(true)
-        const res_Lists = await axios.get('http://localhost:3001/lists?_expand=color&_embed=tasks')
-        const res_Colors = await axios.get('http://localhost:3001/colors')
+        const res_Lists = await axios.get('http://localhost:3000/lists?_expand=color&_embed=tasks')
+        const res_Colors = await axios.get('http://localhost:3000/colors')
 
         setList(res_Lists.data)
         setColors(res_Colors.data)
@@ -44,7 +44,7 @@ function App() {
     }
 
     const chengeTitle = (id, title) => {
-      axios.patch('http://localhost:3001/lists/' + id, {
+      axios.patch('http://localhost:3000/lists/' + id, {
         name: title
       }).catch((error) => {
         alert('Не удалось обновить название списка, ошибка: ' + error)
@@ -78,7 +78,7 @@ function App() {
         })
         setList(newTasks)
 
-        axios.delete('http://localhost:3001/tasks/' + idTask).catch((err) => {
+        axios.delete('http://localhost:3000/tasks/' + idTask).catch((err) => {
           alert('Не удалось удалить задачу. Ошибка: ' + err)
         })
       }
@@ -101,7 +101,7 @@ function App() {
       })
       setList(newTasks)
 
-      axios.patch('http://localhost:3001/tasks/' + taskObj.id, {
+      axios.patch('http://localhost:3000/tasks/' + taskObj.id, {
         text: newText
       }).catch((error) => {
         alert('Не удалось обновить название списка, ошибка: ' + error)
@@ -124,7 +124,7 @@ function App() {
       })
       setList(newTasks)
 
-      axios.patch('http://localhost:3001/tasks/' + taskId, {
+      axios.patch('http://localhost:3000/tasks/' + taskId, {
         completed
       }).catch((error) => {
         alert('Не удалось отметить задачу, ошибка: ' + error)

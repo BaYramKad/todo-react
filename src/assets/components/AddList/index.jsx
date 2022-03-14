@@ -34,7 +34,7 @@ const AddButtonList = ({colors, onAdd}) => {
         colorId: selectedColor
       }
       setIsLoading(true)
-      await axios.post('http://localhost:3001/lists', newList).then(({data}) => {
+      await axios.post('http://localhost:3000/lists', newList).then(({data}) => {
         let color = colors.filter( color => color.id === selectedColor)[0]
         const list = {...data, color, tasks: []} 
         onAdd(list)

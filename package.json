@@ -2,12 +2,14 @@
   "name": "todo",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/BaYramKad/todo-react.git",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.26.0",
     "classnames": "^2.3.1",
+    "gh-pages": "^3.2.3",
     "node-sass": "^7.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -20,7 +22,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "serve": "json-server --watch ./db.json --port 3001"
+    "serve": "json-server --watch ./db.json --port 3000",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
