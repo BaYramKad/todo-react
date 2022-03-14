@@ -25,7 +25,7 @@ export default function AddTask({list, addTask }) {
             "completed": false
           }
           setLoading(true)
-        axios.post('http://localhost:3000/tasks', newTask).then(({data}) => {
+        axios.post('http://localhost:3001/tasks', newTask).then(({data}) => {
             addTask(data)
         }).catch(error => {
             alert('Не удалось добавить задачу Ошибка: ' + error)

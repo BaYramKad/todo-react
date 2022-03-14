@@ -22,7 +22,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "serve": "json-server --watch ./db.json --port 3000",
+    "serve": "json-server --watch ./db.json --port 3001",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
