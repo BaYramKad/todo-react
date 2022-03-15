@@ -2,87 +2,48 @@
   "lists": [
     {
       "id": 1,
-      "name": "Travel",
-      "colorId": 2
-    },
-    {
-      "id": 608,
-      "name": "G",
-      "colorId": 3
-    },
-    {
-      "id": 771,
-      "name": "dsfdsf",
-      "colorId": 7
-    },
-    {
-      "id": 626,
-      "name": "sdfsf",
+      "name": "IT",
       "colorId": 2
     }
   ],
   "tasks": [
     {
       "listId": 1,
-      "text": "123",
+      "text": "Lerning React/Redux",
       "completed": true,
       "id": 13,
       "complete": true
     },
     {
       "listId": 1,
-      "text": "2313",
+      "text": "Lerning PHP and SQL",
       "completed": true,
       "id": 14,
       "complete": true
     },
     {
       "listId": 1,
-      "text": "213",
+      "text": "Add in my portfolio this project TODO-REACT",
       "completed": true,
       "id": 15
     },
     {
       "listId": 1,
-      "text": "123123",
+      "text": "Lerning framework React - Next.js",
       "completed": true,
       "id": 17
     },
     {
       "listId": 1,
-      "text": "fdgdgdf",
-      "completed": true,
+      "text": "Receive knowlage about express.js",
+      "completed": false,
       "id": 25
     },
     {
-      "listId": 608,
-      "text": "dsfsdf",
-      "completed": true,
-      "id": 26
-    },
-    {
-      "listId": 608,
-      "text": "sdfds",
-      "completed": true,
-      "id": 27
-    },
-    {
-      "listId": 771,
-      "text": "dsfds",
-      "completed": true,
-      "id": 28
-    },
-    {
-      "listId": 771,
-      "text": "dfsd",
-      "completed": true,
-      "id": 29
-    },
-    {
-      "listId": 626,
-      "text": "dsfdsf",
+      "listId": 1,
+      "text": "I'M JOB HONTING",
       "completed": false,
-      "id": 30
+      "id": 26
     }
   ],
   "colors": [
