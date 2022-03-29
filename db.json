@@ -44,6 +44,12 @@
       "text": "I'M JOB HONTING",
       "completed": false,
       "id": 26
+    },
+    {
+      "listId": 1,
+      "text": "Изучить firebase",
+      "completed": true,
+      "id": 27
     }
   ],
   "colors": [
